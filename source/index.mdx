@@ -1,126 +1,58 @@
 ---
-title: Documentation Home
-description: Explore the Apollo platform
+title: Introduction to Apollo Client
+sidebar_title: Introduction
 ---
 
-import DocsetMenu from './components/docset-menu';
-import { MenuWrapper } from './components/menu';
-import WorkoutMenuItem from './components/workout-menu-item';
 import { Button } from '@apollo/space-kit/Button';
-import { IconRobot1 } from '@apollo/space-kit/icons/IconRobot1';
 import { Link } from 'gatsby';
 import { colors } from 'gatsby-theme-apollo-core';
-import {
-  ExpansionPanel,
-} from 'gatsby-theme-apollo-docs/src/components/expansion-panel';
-import { ReactComponent as BadmintonPlayer } from './assets/badminton-player.svg';
-import { ReactComponent as Paragliding } from './assets/paragliding.svg';
-import { ReactComponent as Weightlift } from './assets/weightlift.svg';
-import { ReactComponent as Diving } from './assets/diving.svg';
-import { ReactComponent as HeadLight } from './assets/head-light.svg';
 
-Welcome! 👋 Apollo is a platform for building a **data graph**, a communication layer that seamlessly connects your application clients (such as React and iOS apps) to your back-end services.
+**Apollo Client** is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL. Use it to fetch, cache, and modify application data, all while automatically updating your UI.
 
-<DocsetMenu />
+Apollo Client helps you structure code in an economical, predictable, and declarative way that's consistent with modern development practices. The core `@apollo/client` library provides built-in integration with React, and the larger Apollo community maintains [integrations for other popular view layers](#community-integrations).
 
-## New to Apollo or GraphQL?
-
-It's easy to adopt Apollo incrementally, meaning you can set it up alongside an existing solution (such as a REST API) and migrate functionality at your convenience.
-
-<p>
+<div>
   <Button
     size="large"
-    color={colors.primary}
-    as={<Link to="/tutorial/introduction" />}
+    as={<Link to="/get-started/" />}
   >
-    Start the tutorial!
+    Get started!
   </Button>
-  <Button
-    size="large"
-    as={<Link to="/intro/platform" />}
-    style={{marginLeft: 16}}
-  >
-    Learn more
-  </Button>
-</p>
+</div>
 
-## Recommended workouts
+## Features
 
-<MenuWrapper>
+- **Declarative data fetching:** Write a query and receive data without manually tracking loading states.
+- **Excellent developer experience:** Enjoy helpful tooling for TypeScript, Chrome DevTools, and VS Code.
+- **Designed for modern React:** Take advantage of the latest React features, such as hooks.
+- **Incrementally adoptable:** Drop Apollo into any JavaScript app seamlessly.
+- **Universally compatible:** Use any build setup and any GraphQL API.
+- **Community driven:** Share knowledge with thousands of developers, thanks to our active open source community.
 
-<WorkoutMenuItem
-  icon={HeadLight}
-  keyWord="Discover"
-  otherWords="Apollo"
->
+## Explore the docs
 
-* [The Apollo GraphQL platform](./intro/platform/)
-* [Why GraphQL?](./intro/benefits/)
-* Introduction to [Apollo Server](https://www.apollographql.com/docs/apollo-server/) and [Apollo Client](https://www.apollographql.com/docs/react/)
-* [Overview of Apollo Studio](https://www.apollographql.com/docs/studio/)
-* [Principled GraphQL](https://principledgraphql.com/)
+After you [get started](./get-started/), check out the full Apollo Client docs, organized into the following sections on the left:
 
-</WorkoutMenuItem>
+* **Fetching:** Execute queries and other GraphQL operations on your server. **Definitely read [Queries](./data/queries/) if you haven't yet.**
+* **Caching:** Query your cache directly and make local-only modifications to your data.
+* **Local State:** Manage both local and remotely fetched state with a single API.
+* **Development & testing:** Learn about Apollo Client's language and tooling support.
+* **Performance:** Take advantage of advanced features to optimize performance and user experience.
+* **Integrations:** Explore support for view layers besides React.
+* **Networking:** Learn how Apollo Client communicates over the network by default, along with how to customize this behavior.
+* **API:** Consult the complete API reference for Apollo Client, its React APIs, and additional packages.
 
-<WorkoutMenuItem
-  icon={Diving}
-  keyWord="Dive in"
-  otherWords="to the basics"
->
+## Community integrations
 
-* Get started with [Apollo Server](https://www.apollographql.com/docs/apollo-server/getting-started/) and [Apollo Client](https://www.apollographql.com/docs/react/get-started/)
-* The [Apollo CLI](https://www.apollographql.com/docs/devtools/cli/) and [VS Code extension](./devtools/editor-plugins/)
-* [Resolvers](https://www.apollographql.com/docs/apollo-server/data/resolvers/) and [Data sources](https://www.apollographql.com/docs/apollo-server/data/data-sources/) (Apollo Server)
-* [Queries](https://www.apollographql.com/docs/react/data/queries/) and [Mutations](https://www.apollographql.com/docs/react/data/mutations/) (Apollo Client)
-* [Get started with Apollo Studio](https://www.apollographql.com/docs/studio/getting-started/)
+This site's documentation focuses on React, but Apollo Client supports many other libraries and languages:
 
-</WorkoutMenuItem>
-
-<WorkoutMenuItem
-  icon={Weightlift}
-  keyWord="Develop"
-  otherWords="your graph"
->
-
-* [Registering your schema](https://www.apollographql.com/docs/studio/schema-registry/)
-* Caching in [Apollo Server](https://www.apollographql.com/docs/apollo-server/performance/caching/) and [Apollo Client](https://www.apollographql.com/docs/react/caching/cache-configuration/)
-* Mocking new features in [Apollo Server](https://www.apollographql.com/docs/apollo-server/testing/mocking/) and [Apollo Client](https://www.apollographql.com/docs/react/development-testing/client-schema-mocking/)
-* [Using schema directives](https://www.apollographql.com/docs/apollo-server/schema/directives/) (Apollo Server)
-* [Extending Apollo Server with plugins](https://www.apollographql.com/docs/apollo-server/integrations/plugins/)
-
-
-</WorkoutMenuItem>
-
-<WorkoutMenuItem
-  icon={Paragliding}
-  keyWord="Deploy"
-  otherWords="to production"
->
-
-* Deploying Apollo Server to [Heroku](https://www.apollographql.com/docs/apollo-server/deployment/heroku/), [AWS Lambda](https://www.apollographql.com/docs/apollo-server/deployment/lambda/), [Zeit Now](https://www.apollographql.com/docs/apollo-server/deployment/now/), etc.
-* [Preventing breaking changes to your graph](https://www.apollographql.com/docs/studio/schema-checks/)
-* Introduction to [Apollo Federation](https://www.apollographql.com/docs/apollo-server/federation/introduction/) and [Managed federation](https://www.apollographql.com/docs/studio/managed-federation/overview/)
-* Authentication in [Apollo Server](https://www.apollographql.com/docs/apollo-server/security/authentication/) and [Apollo Client](https://www.apollographql.com/docs/react/networking/authentication/)
-* [Segmenting metrics by client](https://www.apollographql.com/docs/studio/client-awareness/)
-
-</WorkoutMenuItem>
-
-<WorkoutMenuItem
-  icon={BadmintonPlayer}
-  keyWord="Debug"
-  otherWords="your solution"
->
-
-* Testing in [Apollo Server](https://www.apollographql.com/docs/apollo-server/testing/testing/) and [Apollo Client](https://www.apollographql.com/docs/react/development-testing/testing/)
-* Error handling in [Apollo Server](https://www.apollographql.com/docs/apollo-server/data/errors/) and [Apollo Client](https://www.apollographql.com/docs/react/data/error-handling/)
-* [Metrics and logging](https://www.apollographql.com/docs/apollo-server/monitoring/metrics/) (Apollo Server)
-* [Analyzing performance](https://www.apollographql.com/docs/studio/performance/) with Apollo Studio
-* [Pushing federated trace data](https://www.apollographql.com/docs/apollo-server/federation/metrics/)
-
-</WorkoutMenuItem>
-
-</MenuWrapper>
-
----
-
-<sub>The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License.</sub>
+- JavaScript
+  - [Angular](https://apollo-angular.com)
+  - [Vue](integrations/integrations/#vue)
+  - [Ember](integrations/integrations/#ember)
+  - Meteor (thanks to [DDP-Apollo](https://github.com/Swydo/ddp-apollo))
+- Web Components
+  - [Apollo Elements](integrations/integrations/#web-components)
+- Native mobile
+  - [Native iOS with Swift](https://www.apollographql.com/docs/ios)
+  - [Native Android with Java and Kotlin](https://www.apollographql.com/docs/android)
