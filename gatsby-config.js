@@ -1,4 +1,4 @@
-const themeOptions = require('gatsby-theme-apollo-docs/theme-options');
+const themeOptions = require('./theme-options');
 
 module.exports = {
   pathPrefix: '/docs',
