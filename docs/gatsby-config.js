@@ -31,13 +31,6 @@ module.exports = {
           'API - Cache': [
             'api/cache/InMemoryCache'
           ],
-          'API - React': [
-            'api/react/hooks',
-            'api/react/testing',
-            'api/react/ssr',
-            'api/react/components',
-            'api/react/hoc'
-          ],
           'API - Link': [
             'api/link/introduction',
             'api/link/apollo-link-batch-http',
