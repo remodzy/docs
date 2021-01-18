@@ -275,7 +275,7 @@ const link = new ApolloLink((operation, forward) => {
 })
 
 const client = new ApolloClient({
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
   link,
 });
 
