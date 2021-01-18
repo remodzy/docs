@@ -24,60 +24,6 @@ module.exports = {
             'get-started',
             '[Changelog](https://github.com/apollographql/apollo-client/blob/main/CHANGELOG.md)',
           ],
-          'Fetching': [
-            'data/queries',
-            'data/mutations',
-            'data/subscriptions',
-            'data/fragments',
-            'data/error-handling',
-          ],
-          Caching: [
-            'caching/cache-configuration',
-            'caching/cache-interaction',
-            'caching/garbage-collection',
-            'caching/cache-field-behavior',
-            'caching/advanced-topics'
-          ],
-          Pagination: [
-            'pagination/overview',
-            'pagination/core-api',
-            'pagination/offset-based',
-            'pagination/cursor-based',
-            'pagination/key-args'
-          ],
-          'Local State': [
-            'local-state/local-state-management',
-            'local-state/managing-state-with-field-policies',
-            'local-state/reactive-variables',
-            'local-state/client-side-schema',
-            'local-state/local-resolvers'
-          ],
-          'Development & Testing': [
-            'development-testing/static-typing',
-            'development-testing/testing',
-            'development-testing/client-schema-mocking',
-            'development-testing/developer-tooling',
-          ],
-          Performance: [
-            'performance/performance',
-            'performance/optimistic-ui',
-            'performance/server-side-rendering',
-            'performance/babel',
-          ],
-          Integrations: [
-            'integrations/integrations',
-            'integrations/react-native',
-            'integrations/webpack',
-          ],
-          Networking: [
-            'networking/basic-http-networking',
-            'networking/advanced-http-networking',
-            'networking/authentication',
-          ],
-          Migrating: [
-            'migrating/apollo-client-3-migration',
-            'migrating/hooks-migration'
-          ],
           'API - Core': [
             'api/core/ApolloClient',
             'api/core/ObservableQuery'
