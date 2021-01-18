@@ -1,7 +1,7 @@
-const themeOptions = require('./theme-options');
+const themeOptions = require('gatsby-theme-apollo-docs/theme-options');
 
 module.exports = {
-  pathPrefix: '/docs',
+  pathPrefix: '/docs/react',
   plugins: [
     {
       resolve: 'gatsby-theme-apollo-docs',
@@ -10,11 +10,7 @@ module.exports = {
         root: __dirname,
         subtitle: 'Client (React)',
         description: 'A guide to using the Apollo GraphQL Client with React',
-        githubRepo: 'apollographql/apollo-client',
-        defaultVersion: '3',
-        versions: {
-          '2': 'version-2.6',
-        },
+        githubRepo: 'remodzy/docs',
         checkLinksOptions: {
           exceptions: [
             '/api/core/ApolloClient/',
