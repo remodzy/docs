@@ -8,10 +8,6 @@ description: Description
 
 ### Sub Topic
 
-```js
-// code block
-```
-
 ## Best Practices
 
 ## API Documentation
