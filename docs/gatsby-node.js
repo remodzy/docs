@@ -4,6 +4,71 @@ const git = require('simple-git')();
 const {createFilePath} = require('gatsby-source-filesystem');
 const {getVersionBasePath, getSpectrumUrl} = require('./src/utils');
 //const {createPrinterNode} = require('gatsby-plugin-printer');
+const themeOptions = require('./theme-options');
+
+const options = {
+  ...themeOptions,
+  root: __dirname,
+  subtitle: 'Client (React)',
+  description: 'A guide to using the Apollo GraphQL Client with React',
+  githubRepo: 'remodzy/docs',
+  checkLinksOptions: {
+    exceptions: [
+      '/api/core/ApolloClient/',
+      '/v2/api/apollo-client/',
+    ],
+  },
+  sidebarCategories: {
+    null: [
+      'index',
+      'why-apollo',
+      'get-started',
+      '[Changelog](https://github.com/apollographql/apollo-client/blob/main/CHANGELOG.md)',
+    ],
+    'API - Core': [
+      'api/core/ApolloClient',
+      'api/core/ObservableQuery'
+    ],
+    'API - Cache': [
+      'api/cache/InMemoryCache'
+    ],
+    'API - Link': [
+      'api/link/apollo-link-batch-http',
+      'api/link/apollo-link-context',
+      'api/link/apollo-link-error',
+      'api/link/apollo-link-rest',
+      'api/link/apollo-link-retry',
+      'api/link/apollo-link-ws',
+      'api/link/persisted-queries'
+    ],
+  },
+}
+
+const {
+  root,
+  siteName,
+  pageTitle,
+  description,
+  githubHost = 'github.com',
+  githubRepo,
+  baseDir = '',
+  contentDir = 'content',
+  versions = {},
+  gaTrackingId,
+  ignore,
+  checkLinksOptions,
+  gatsbyRemarkPlugins = [],
+  remarkPlugins = [],
+  defaultVersion = 'default',
+  subtitle,
+  sidebarCategories,
+  spectrumHandle,
+  spectrumPath,
+  ffWidgetId,
+  twitterHandle,
+  localVersion,
+  baseUrl
+} = options
 
 function getConfigPaths(baseDir) {
   return [
@@ -14,15 +79,6 @@ function getConfigPaths(baseDir) {
 
 async function onCreateNode(
   {node, actions, getNode, loadNodeContent},
-  {
-    baseDir = '',
-    contentDir = 'content',
-    defaultVersion = 'default',
-    localVersion,
-    siteName,
-    subtitle,
-    sidebarCategories
-  }
 ) {
   const configPaths = getConfigPaths(baseDir);
   if (configPaths.includes(node.relativePath)) {
@@ -216,22 +272,6 @@ const pageFragment = `
 
 exports.createPages = async (
   {actions, graphql},
-  {
-    baseDir = '',
-    contentDir = 'content',
-    defaultVersion = 'default',
-    versions = {},
-    subtitle,
-    githubRepo,
-    githubHost = 'github.com',
-    sidebarCategories,
-    spectrumHandle,
-    spectrumPath,
-    ffWidgetId,
-    twitterHandle,
-    localVersion,
-    baseUrl
-  }
 ) => {
   const {data} = await graphql(`
     {
