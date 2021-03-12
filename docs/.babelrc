@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "compact": false,
+  "env": {
+    "development" : {
+      "compact": false
+    },
+    "production" : {
+      "compact": false
+    }
+  }
+}

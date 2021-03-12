@@ -3,6 +3,7 @@ const themeOptions = require('gatsby-theme-apollo-docs/theme-options');
 module.exports = {
   pathPrefix: '/docs/react',
   plugins: [
+    "babel-preset-gatsby",
     {
       resolve: 'gatsby-theme-apollo-docs',
       options: {
