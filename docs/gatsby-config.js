@@ -5,6 +5,14 @@ module.exports = {
   plugins: [
     "babel-preset-gatsby",
     {
+      resolve: `gatsby-plugin-printer`,
+      options: {
+        puppeteerLaunchOptions: {
+          headless: true
+        }
+      }
+    },
+    {
       resolve: 'gatsby-theme-apollo-docs',
       options: {
         ...themeOptions,
