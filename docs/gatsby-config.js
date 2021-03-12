@@ -1,19 +1,11 @@
-const themeOptions = require('gatsby-theme-apollo-docs/theme-options');
+const themeOptions = require('./plugins/gatsby-theme-apollo-docs-remodzy/theme-options');
 
 module.exports = {
   pathPrefix: '/docs/react',
   plugins: [
     "babel-preset-gatsby",
     {
-      resolve: `gatsby-plugin-printer`,
-      options: {
-        puppeteerLaunchOptions: {
-          headless: true
-        }
-      }
-    },
-    {
-      resolve: 'gatsby-theme-apollo-docs',
+      resolve: 'gatsby-theme-apollo-docs-remodzy',
       options: {
         ...themeOptions,
         root: __dirname,
