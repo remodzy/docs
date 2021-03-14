@@ -4,7 +4,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "types": "cd .. && typedoc --json ./docs/src/gatsby-theme-apollo-docs/docs.json --ignoreCompilerErrors ./src/index.ts"
+    "types": "cd .. && typedoc --json ./docs/src/gatsby-theme-apollo-docs/docs.json --ignoreCompilerErrors ./src/index.ts",
+    "postinstall": "cd ./plugins/gatsby-theme-apollo-docs-remodzy && npm install"
   },
   "dependencies": {
     "gatsby": "2.29.3",
