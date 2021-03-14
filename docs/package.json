@@ -4,8 +4,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "types": "cd .. && typedoc --json ./docs/src/gatsby-theme-apollo-docs/docs.json --ignoreCompilerErrors ./src/index.ts",
-    "postinstall": "cd ./plugins/gatsby-theme-apollo-docs-remodzy && npm install"
+    "types": "cd .. && typedoc --json ./docs/src/gatsby-theme-apollo-docs/docs.json --ignoreCompilerErrors ./src/index.ts"
   },
   "dependencies": {
     "gatsby": "2.29.3",
@@ -30,7 +29,18 @@
     "remark-typescript": "^0.3.1",
     "simple-git": "^2.36.2",
     "striptags": "^3.1.1",
-    "webpack-virtual-modules": "^0.4.0"
+    "webpack-virtual-modules": "^0.4.0",
+    "@mdx-js/mdx": "^1.1.0",
+    "@mdx-js/react": "^1.0.27",
+    "classnames": "^2.2.6",
+    "gatsby-source-git": "^1.0.1",
+    "js-yaml": "^3.13.1",
+    "prismjs": "^1.15.0",
+    "react-textfit": "^1.1.0",
+    "recompose": "^0.30.0",
+    "remark": "^10.0.1",
+    "remark-react": "^5.0.1",
+    "source-sans-pro": "^3.6.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",
