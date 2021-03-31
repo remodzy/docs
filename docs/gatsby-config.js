@@ -10,7 +10,7 @@ module.exports = {
         ...themeOptions,
         root: __dirname,
         siteName: 'Roxabo Docs',
-        pageTitle: 'Roxabo GraphQL Docs',
+        pageTitle: 'Roxabo | Docs',
         subtitle: 'Client (React)',
         description: 'A guide to using the Apollo GraphQL Client with React',
         githubRepo: 'remodzy/docs',
