@@ -15,6 +15,7 @@ module.exports = {
         description: 'A guide to using the Apollo GraphQL Client with React',
         githubRepo: 'remodzy/docs',
         logoLink: '//docs.roxabo.com/',
+        spectrumHandle: '',
         checkLinksOptions: {
           exceptions: [
             '/api/core/ApolloClient/',
