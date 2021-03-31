@@ -12,6 +12,7 @@ module.exports = {
         subtitle: 'Client (React)',
         description: 'A guide to using the Apollo GraphQL Client with React',
         githubRepo: 'remodzy/docs',
+        logoLink: '//docs.roxabo.com/',
         checkLinksOptions: {
           exceptions: [
             '/api/core/ApolloClient/',

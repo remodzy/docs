@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import {ApolloIcon} from '@apollo/space-kit/icons/ApolloIcon';
-import {ReactComponent as DocsIcon} from '../../assets/docs.svg';
+import {ReactComponent as DocsIcon} from '../../assets/roxabo.svg';
 
 const Wrapper = styled.div({
   display: 'flex',
@@ -14,14 +14,12 @@ const StyledApolloIcon = styled(ApolloIcon)({
 });
 
 const StyledDocsIcon = styled(DocsIcon)({
-  height: '0.7857142857em',
   marginTop: '0.07142857143em'
 });
 
 export default function Logo() {
   return (
     <Wrapper>
-      <StyledApolloIcon />
       <StyledDocsIcon />
     </Wrapper>
   );
