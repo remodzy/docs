@@ -1,79 +1,53 @@
 const navConfig = {
-  'Apollo Basics': {
+  'RoxForms': {
     category: 'Core',
-    url: 'https://www.apollographql.com/docs',
+    url: 'https://docs.roxabo.com/roxforms',
     description:
-      'Learn about each part of the Apollo platform and how they all work together.',
+      'Learn about each part of the RoxForms product',
     omitLandingPage: true
   },
-  'Apollo Client (React)': {
-    category: 'Apollo Client',
-    shortName: 'React / JS',
-    url: 'https://www.apollographql.com/docs/react',
+  'RoxForms SDK (Angular)': {
+    category: 'Rox SDK Clients',
+    shortName: 'RoxForms Angular',
+    url: 'https://docs.roxabo.com/roxforms/websdk',
     description:
-      "Manage the entirety of your React app's state and seamlessly execute GraphQL operations."
+      "Integrate RoxForms into your own Angular web application"
   },
-  'Apollo Client (iOS)': {
-    category: 'Apollo Client',
-    shortName: 'iOS',
-    url: 'https://www.apollographql.com/docs/ios',
+  'RoxForms SDK (Flutter)': {
+    category: 'Rox SDK Clients',
+    shortName: 'RoxForms Flutter',
+    url: 'https://docs.roxabo.com/roxforms/flutter',
     description:
-      "Manage the entirety of your iOS app's state and seamlessly execute GraphQL operations."
+      "Integrate RoxForms into your own Flutter mobile application"
   },
-  'Apollo Client (Android)': {
-    category: 'Apollo Client',
-    shortName: 'Android',
-    url: 'https://www.apollographql.com/docs/android',
-    description:
-      "Manage the entirety of your Android app's state and seamlessly execute GraphQL operations."
-  },
-  'Apollo Server': {
+  'RoxForms REST API': {
     category: 'Backend',
-    url: 'https://www.apollographql.com/docs/apollo-server',
+    url: 'https://docs.roxabo.com/roxforms/api',
     description:
-      'Configure a production-ready GraphQL server to fetch and combine data from multiple sources.'
-  },
-  'Apollo Federation': {
-    category: 'Backend',
-    url: 'https://www.apollographql.com/docs/federation',
-    description: 'Implement a single data graph across multiple services.'
-  },
-  'Apollo Studio': {
-    category: 'Tools',
-    url: 'https://www.apollographql.com/docs/graph-manager',
-    description:
-      'Build your graph with your team, evolve it safely, and keep it running smoothly.'
+      'Use powerfull REST APIs to integrate RoxForms into your own solution'
   }
 };
 
 const footerNavConfig = {
   Blog: {
-    href: 'https://blog.apollographql.com/',
-    target: '_blank',
-    rel: 'noopener noreferrer'
-  },
-  Contribute: {
-    href: 'https://www.apollographql.com/docs/community/'
-  },
-  'GraphQL Summit': {
-    href: 'https://summit.graphql.com/',
+    href: 'https://roxabo.com/blog',
     target: '_blank',
     rel: 'noopener noreferrer'
   }
 };
 
 module.exports = {
-  siteName: 'Apollo Docs',
-  pageTitle: 'Apollo GraphQL Docs',
-  menuTitle: 'Apollo Platform',
-  gaTrackingId: 'UA-74643563-13',
+  siteName: 'Roxabo Docs',
+  pageTitle: 'Roxabo Docs',
+  menuTitle: 'Roxabo Products',
+  gaTrackingId: '',
   algoliaApiKey: '768e823959d35bbd51e4b2439be13fb7',
   algoliaIndexName: 'apollodata',
-  baseUrl: 'https://www.apollographql.com',
-  twitterHandle: 'apollographql',
-  spectrumHandle: 'apollo',
-  youtubeUrl: 'https://www.youtube.com/channel/UC0pEW_GOrMJ23l8QcrGdKSw',
-  logoLink: 'https://www.apollographql.com/docs/',
+  baseUrl: 'https://roxabo.com',
+  twitterHandle: '',
+  spectrumHandle: '',
+  youtubeUrl: '',
+  logoLink: 'https://docs.roxabo.com',
   baseDir: 'docs',
   contentDir: 'source',
   navConfig,

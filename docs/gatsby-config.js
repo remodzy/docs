@@ -11,8 +11,8 @@ module.exports = {
         root: __dirname,
         siteName: 'Roxabo Docs',
         pageTitle: 'Roxabo | Docs',
-        subtitle: 'Client (React)',
-        description: 'A guide to using the Apollo GraphQL Client with React',
+        subtitle: 'Roxabo Products',
+        description: 'A guide to using Roxabo products - RoxForms',
         githubRepo: 'remodzy/docs',
         logoLink: '//docs.roxabo.com/',
         spectrumHandle: '',
@@ -25,26 +25,14 @@ module.exports = {
         sidebarCategories: {
           null: [
             'index',
-            'why-apollo',
-            'get-started',
-            '[Changelog](https://github.com/apollographql/apollo-client/blob/main/CHANGELOG.md)',
+            'why-roxforms',
+            'example'
           ],
-          'API - Core': [
-            'api/core/ApolloClient',
-            'api/core/ObservableQuery'
-          ],
-          'API - Cache': [
-            'api/cache/InMemoryCache'
-          ],
-          'API - Link': [
-            'api/link/apollo-link-batch-http',
-            'api/link/apollo-link-context',
-            'api/link/apollo-link-error',
-            'api/link/apollo-link-rest',
-            'api/link/apollo-link-retry',
-            'api/link/apollo-link-ws',
-            'api/link/persisted-queries'
-          ],
+          'RoxForms - Controls': [
+            'controls/introduction',
+            'controls/cntrl-section',
+            'controls/cntrl-single-choice',
+          ]
         },
       },
     },

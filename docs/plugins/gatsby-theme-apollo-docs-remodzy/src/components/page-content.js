@@ -249,7 +249,6 @@ export default function PageContent(props) {
             imagesLoaded={imagesLoaded === imagesToLoad}
           />
         )}
-        {props.ffWidgetId && <FeedbackLink title={props.title} />}
         {editLink}
         {props.spectrumUrl && (
           <AsideLink href={props.spectrumUrl}>
