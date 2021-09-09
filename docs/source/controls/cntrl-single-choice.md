@@ -1,4 +1,4 @@
 ---
-title: 'Introduction'
-sidebar_title: '1. Section'
+title: 'Single Choice'
+sidebar_title: '2. Single Choice'
 ---

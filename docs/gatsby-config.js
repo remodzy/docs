@@ -32,6 +32,7 @@ module.exports = {
             'controls/introduction',
             'controls/cntrl-section',
             'controls/cntrl-single-choice',
+            'controls/cntrl-datetime'
           ]
         },
       },

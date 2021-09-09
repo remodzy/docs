@@ -1,6 +1,6 @@
 ---
 title: 'Section'
-sidebar_title: '2. Section Control'
+sidebar_title: '1. Section Control'
 ---
 
 ## Some more infromation
