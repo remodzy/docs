@@ -32,7 +32,18 @@ module.exports = {
             'controls/introduction',
             'controls/cntrl-section',
             'controls/cntrl-single-choice',
-            'controls/cntrl-datetime'
+            'controls/cntrl-multiple-choice',
+            'controls/cntrl-text-input',
+            'controls/cntrl-number',
+            'controls/cntrl-photo',
+            'controls/cntrl-video',
+            'controls/cntrl-text-section',
+            'controls/cntrl-datetime',
+            'controls/cntrl-attachment',
+            'controls/cntrl-table',
+            'controls/cntrl-location',
+            'controls/cntrl-electronic-signature',
+            'controls/cntrl-page-break'
           ]
         },
       },
