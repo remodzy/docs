@@ -25,8 +25,7 @@ module.exports = {
         sidebarCategories: {
           null: [
             'index',
-            'restapi',
-            'example'
+            'restapi'
           ],
           'RoxForms - Controls': [
             'controls/introduction',
