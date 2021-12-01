@@ -47,7 +47,7 @@ To be able to send a request to the API, it is important to include id Token in 
 > Id Token has a limited lifetime. Please make sure you are checking if the token is valid before making a request to the API. To be able to check token claims, use publicly available libs: https://jwt.io/
 
 
-## CREATE FORM
+## CREATE
 
 To create (submit) a new form, it is required to have following parameters: 
   - **templateFormId** - Template Id which will be used to submit a new form
@@ -71,4 +71,35 @@ Where **control_1** - is a name for the control in the form. A new form will be 
   {
     "formId":"69U8yrdjKCDZoQpy8xiD"
   }
+```
+
+
+## UPDATE
+
+```jsx
+  PUT https://api.roxabo.com/external-forms/{formId}
+  Authorization Bearer {idToken}
+  {
+      "data": {
+          "control_1": {
+              "state": "notApplicable",
+              "value": "Test API"
+          }
+      },
+      "status": "Approved"
+  }
+```
+
+## GET
+
+```jsx
+  GET https://api.roxabo.com/external-forms/{formId}
+  Authorization Bearer {idToken}
+```
+
+## DELETE
+
+```jsx
+  DELETE https://api.roxabo.com/external-forms/{formId}
+  Authorization Bearer {idToken}
 ```
