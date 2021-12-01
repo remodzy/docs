@@ -204,22 +204,6 @@ export default function PageLayout(props) {
           logoLink={logoLink}
         >
           <HeaderInner>
-            {hasNavItems ? (
-              <ButtonWrapper ref={buttonRef}>
-                <StyledButton
-                  feel="flat"
-                  color={colors.primary}
-                  size="small"
-                  onClick={openMenu}
-                  style={{display: 'flex'}}
-                >
-                  {sidebarTitle}
-                  <StyledIcon />
-                </StyledButton>
-              </ButtonWrapper>
-            ) : (
-              sidebarTitle
-            )}
             {versions && versions.length > 0 && (
               <Select
                 feel="flat"

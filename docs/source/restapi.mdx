@@ -1,13 +1,15 @@
 ---
-title: Why RoxForms?
-description: Why choose RoxForms to collect and manage your user data?
+title: RoxForms REST API
+description: Using simple API to create, read, update and delete forms. 
 ---
 
-Data management shouldn't have to be so difficult! If you're wondering how to simplify managing remote and local data in your React application, then you've come to the right place. Throughout this documentation, you'll learn how Apollo's intelligent caching and declarative approach to data fetching can help you iterate faster while writing less code. Let's jump right in! 🚀
+RoxForms has simple but yet powerfull API to manage forms. Together with simple CRUD opearions, RoxForms provides flexible Web Hook functionality. To be able to use REST API, users first need to obtain a JWT security token. 
 
-## Declarative data fetching
+## Generating Integration credentials 
 
-With Apollo's declarative approach to data fetching, all of the logic for retrieving your data, tracking loading and error states, and updating your UI is encapsulated by the `useQuery` Hook. This encapsulation makes integrating query results into your presentational components a breeze! Let's see what this looks like in practice with Apollo Client and React:
+Each tenant admin has ability generate a set of credentials to access API methods. Use Settings module to generate new pair of username & password:
+
+<img src="../img/intcreds.png" alt="Studio Explorer tab" class="screenshot" />
 
 ```jsx
 function Feed() {
