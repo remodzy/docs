@@ -24,8 +24,7 @@ module.exports = {
         },
         sidebarCategories: {
           null: [
-            'index',
-            'restapi'
+            'index'
           ],
           'Form Controls': [
             'controls/cntrl-section',
@@ -42,6 +41,10 @@ module.exports = {
             'controls/cntrl-location',
             'controls/cntrl-electronic-signature',
             'controls/cntrl-page-break'
+          ],
+          'Integration' : [
+            'integration/int-restapi',
+            'integration/int-webhooks'
           ]
         },
       },
