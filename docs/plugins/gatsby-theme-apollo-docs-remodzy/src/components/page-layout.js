@@ -251,7 +251,6 @@ export default function PageLayout(props) {
           >
             <MobileNav>
               <MenuButton onClick={openSidebar} />
-              <MobileLogo width={32} fill="currentColor" />
             </MobileNav>
             {algoliaApiKey && algoliaIndexName && (
               <Search

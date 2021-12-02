@@ -27,8 +27,7 @@ module.exports = {
             'index',
             'restapi'
           ],
-          'RoxForms - Controls': [
-            'controls/introduction',
+          'Form Controls': [
             'controls/cntrl-section',
             'controls/cntrl-single-choice',
             'controls/cntrl-multiple-choice',
