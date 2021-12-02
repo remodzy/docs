@@ -13,7 +13,7 @@ Each RoxForms temaplte has settings screen:
 
 <img src="../images/workflow.png" alt="Workflow Function" class="screenshot" />
 
-If **Workflow Function** field has value and every time form is submitted a custom function will be called and form object will be passed to it.
+If **Workflow Function** field has value and every time form is submitted a custom function will be called and form object will be passed to it:
 
 ```jsx
     POST https://{customerwebhook.com}
@@ -60,3 +60,8 @@ If **Workflow Function** field has value and every time form is submitted a cust
     "action": "Update"
     }
 ```
+
+By chaning fields on the form object and returning it back to the RoxForms, users can move form from status to status, changing to who the form can be assigned to, which field or even pages can be hidden etc.  
+
+## Export Function
+**Export Function** can be used for generating a PDF document. RoxForms will send form object as json (similar to Workflow )
