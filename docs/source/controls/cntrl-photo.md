@@ -1,4 +1,4 @@
 ---
 title: 'Photo'
-sidebar_title: '6. Photo Control'
+sidebar_title: 'Photo Control'
 ---

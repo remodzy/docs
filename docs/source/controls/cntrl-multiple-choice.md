@@ -1,4 +1,4 @@
 ---
 title: 'Multiple Choice'
-sidebar_title: '3. Multiple Choice'
+sidebar_title: 'Multiple Choice'
 ---

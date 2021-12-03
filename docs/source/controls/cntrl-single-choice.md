@@ -1,4 +1,4 @@
 ---
 title: 'Single Choice'
-sidebar_title: '2. Single Choice'
+sidebar_title: 'Single Choice'
 ---

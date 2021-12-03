@@ -1,4 +1,4 @@
 ---
 title: 'Text Input'
-sidebar_title: '4. Text Input'
+sidebar_title: 'Text Input'
 ---

@@ -1,5 +1,5 @@
 ---
-title: 'Table Control'
-sidebar_title: '11. Table Control'
+title: 'Attachment Control'
+sidebar_title: 'Attachment Control'
 ---
 

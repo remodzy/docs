@@ -27,6 +27,7 @@ module.exports = {
             'index'
           ],
           'Form Controls': [
+            'controls/introduction',
             'controls/cntrl-section',
             'controls/cntrl-single-choice',
             'controls/cntrl-multiple-choice',
@@ -44,7 +45,8 @@ module.exports = {
           ],
           'Integration' : [
             'integration/int-restapi',
-            'integration/int-webhooks'
+            'integration/int-webhooks',
+            'integration/int-database'
           ]
         },
       },

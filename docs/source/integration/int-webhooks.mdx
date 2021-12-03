@@ -64,4 +64,5 @@ If **Workflow Function** field has value and every time form is submitted a cust
 By chaning fields on the form object and returning it back to the RoxForms, users can move form from status to status, changing to who the form can be assigned to, which field or even pages can be hidden etc.  
 
 ## Export Function
-**Export Function** can be used for generating a PDF document. RoxForms will send form object as json (similar to Workflow )
+**Export Function** can be used to generate a custom PDF document. RoxForms sends a form object as a json (similar to Workflow Function). 
+> For RoxForms mobile and web application to be able to download the file, the **Export Function** should include returning **content type** as **application/pdf**
