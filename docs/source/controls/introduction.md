@@ -29,7 +29,7 @@ All controls have a **state** parameter, which can have values:
 * Read Only
 * Hidden
 
-When using [WebHook Integration](https://docs.roxabo.com/integration/int-webhooks/), all controls will pass their current state, and by using your custom workflow users can manipulate the control state - hide or show depending on the workflow requirements:
+When using [WebHook Integration](https://docs.roxabo.com/integration/int-webhooks/), all controls will pass their current state, and by using your custom workflow you can manipulate the control's state - hide or show depending on the workflow requirements:
 ```jsx
     POST https://{customerwebhook.com}
     {
@@ -57,5 +57,7 @@ When using [WebHook Integration](https://docs.roxabo.com/integration/int-webhook
     }
 ```
 
+## Control Names
+In addition, every control has a name. The name has to be unique for each control as RoxForms uses control names in Workflow and Export functions, but also in [SQL DB Integration](https://docs.roxabo.com/integration/int-database)
 
 
